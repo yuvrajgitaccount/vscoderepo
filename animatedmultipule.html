@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+    <script>
+$(document).ready(function(){
+$("#demo").click(function(){
+
+$("#demo1").animate(
+{
+left:'450px',
+height:'150px',
+width:'200px',
+opacity:'0.5'
+
+});
+
+});
+
+
+});
+
+
+
+    </script>
+</head>
+<body>
+    
+
+    <button id="demo">Please click here</button>
+
+    <div id="demo1" style="height: 100px;width:100px;background:rebeccapurple;position:absolute;"></div>
+</body>
+</html>

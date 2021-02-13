@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+
+
+  
+<style>
+
+p{
+margin: 4px;
+color:red;
+
+
+}
+b{
+
+color:green;
+
+}
+
+</style>
+
+
+
+</head>
+<body>
+    
+    <p></p>
+
+<select id="single">
+<option>Single</option>
+<option>Double</option>
+<option>Thirple</option>
+<option>Four</option>
+
+
+
+</select>
+
+
+<script>
+
+    function optinaVal(){
+    
+        var singlevar=$("#single").val();
+        $('p').html("<b>Value:</b>"+singlevar);
+    
+    }
+    
+    $('select').change(optinaVal);
+        optinaVal();
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+
+
+
+
+
+    <script>
+$(document).ready(function(){
+$("#filp").click(function(){
+
+    $("#plannel").slideDown();
+});
+
+$("#filp").click(function(){
+
+$("#plannel").slideUp("slow");
+
+
+});
+
+$("#filp").click(function(){
+
+    $("#plannel").slideToggle("slow");
+    
+    
+    });
+
+
+});
+
+    </script>
+
+    <style>
+
+        #plannel,#filp {
+padding: 5%;
+text-align: center;
+background-color: yellow;
+border: solid 1px #c3c3c3;  
+        }
+        #plannel
+        {
+            padding: 50px;
+            background-color: red;
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+
+
+    <div id="filp">Clik the pannel</div>
+<div id="plannel">It is the best tutorial website to learn jQuery and other languages.</div>
+
+
+    
+</body>
+</html>

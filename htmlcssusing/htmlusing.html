@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+    <script>
+
+        $(document).ready(function(){
+$("#demo").click(function(){
+
+$("p").html("hello<b>javatpoint .com</b>");
+
+}); 
+
+
+
+$("#demo1").click(function(){
+
+
+    alert($('p').html());
+
+
+
+});
+
+
+
+        });
+
+
+
+    </script>
+
+</head>
+<body>
+
+    <button id="demo">Please click here and see the macgic</button>
+    <button id="demo1">Please click here alreat</button>
+    <p>I m reading the booking</p>
+
+    <p>he is not here</p>
+
+
+</body>
+</html>

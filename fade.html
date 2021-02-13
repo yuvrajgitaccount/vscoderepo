@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+
+    <script>
+
+$(document).ready(function(){
+
+    $("#demo").click(function(){
+
+        $("#demo3").fadeIn();
+        $("#demo1").fadeIn("slow");
+        $("#demo2").fadeIn(30000);
+        
+          
+    });
+
+    $("#demo5").click(function(){
+
+        $("#demo3").fadeOut();
+        $("#demo1").fadeOut();
+        $("#demo2").fadeOut(1000);
+        
+          
+    });
+
+
+
+    $("#demo6").click(function(){
+
+        $("#demo3").fadeToggle();
+        $("#demo1").fadeToggle("slow");
+        $("#demo2").fadeOut(1000);
+        
+          
+    });
+
+
+
+
+    $("#demo7").click(function(){
+
+        $("#demo1").fadeTo("slow",0.3);
+      $("#demo2").fadeTo("slow",0.2);
+       $("#demo3").fadeTo("slow",0.3);
+
+    });
+
+
+});
+
+    </script>
+
+
+
+</head>
+<body>
+     <p>  
+        <b>This is a little poem: </b><br/>  
+        Twinkle, twinkle, little star<br/>  
+        How I wonder what you are<br/>  
+        Up above the world so high<br/>  
+        Like a diamond in the sky<br/>  
+        Twinkle, twinkle little star<br/>  
+        How I wonder what you are  
+        </p>  
+
+
+        
+
+<button id="demo">Click here please</button>
+
+<button id="demo5">Click here fadeout</button>
+
+<button id="demo6">Click here fadeToggle</button>
+
+
+<button id="demo7">Click here i m using fadeTO</button>
+
+
+
+    <div id="demo1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+
+
+    <div id="demo2" style="width:80px;height:80px;display:none;background-color:yellow;"></div><br>
+
+    
+    <div id="demo3" style="width:80px;height:80px;display:none;background-color:teal;"></div><br>
+</body>
+</html>

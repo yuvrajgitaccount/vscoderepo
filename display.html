@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+    <script>
+
+        $(document).ready(function(){
+        
+
+            //hide the page
+            $("#demo").click(function(){
+        
+                $("p").hide(1500);
+            });
+    
+
+            //show the page
+            $("#demo1").click(function(){
+    
+              $("p").show(1000);
+            });
+
+
+//toggle the page
+            $("#demo3").click(function(){
+              $("p").toggle(2000);
+
+            });
+
+        });
+        
+        </script>
+</head>
+<body>
+    
+    <p>  
+        <b>This is a little poem: </b><br/>  
+        Twinkle, twinkle, little star<br/>  
+        How I wonder what you are<br/>  
+        Up above the world so high<br/>  
+        Like a diamond in the sky<br/>  
+        Twinkle, twinkle little star<br/>  
+        How I wonder what you are  
+        </p>  
+
+<button id="demo">Hide</button>
+<button id="demo1">Show</button>
+<button id="demo3">Toggle</button>
+
+
+
+
+
+
+
+</body>
+
+
+</html>
